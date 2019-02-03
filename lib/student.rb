@@ -33,7 +33,7 @@ class Student
       INSERT INTO students(name, grade) VALUES (?, ?)
     SQL
     
-    DB[:conn].execute(students.name, students.grade.sql)
+    DB[:conn].execute(sql,students.name, students.grade)
   end 
   
   # Remember, you can access your database connection anywhere in this class
