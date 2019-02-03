@@ -42,6 +42,7 @@ class Student
     #here you are adding them to the hash 
     student = Student.new(name, grade)
     
+    
   end 
   
   # Remember, you can access your database connection anywhere in this class
