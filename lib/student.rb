@@ -32,6 +32,8 @@ class Student
     sql = <<-SQL 
       INSERT INTO students(name, grade) VALUES (?, ?)
     SQL
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
+    #above saves to the database... INCLUDING the id 
     DB[:conn].execute(sql, student.name, student.grade)
   end 
   
