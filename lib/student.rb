@@ -38,7 +38,7 @@ class Student
     #above saves to the database... INCLUDING the id 
   end 
   
-  def self.create 
+  def self.create(name:, grade:) 
     
   end 
   
