@@ -32,7 +32,7 @@ class Student
     sql = <<-SQL 
       INSERT INTO students(name, grade) VALUES (?, ?)
     SQL
-    DB[:conn].execute(sql, student.name, student.grade)
+    DB[:conn].execute(sql, students.name, students.grade)
     # @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
     #above saves to the database... INCLUDING the id 
     
