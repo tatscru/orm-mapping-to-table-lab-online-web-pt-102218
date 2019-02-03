@@ -39,7 +39,7 @@ class Student
   end 
   
   def self.create(name:, grade:) 
-    #here you are adding the attributes to your hash- using metaprogramming 
+    #here it takes in a hash of attributes- using metaprogramming 
     new_student = Student.new(name, grade)
     new_student.save
     new_student 
