@@ -35,7 +35,7 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade)
     #here you are saving the instance of the class- receiver 
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
-    #above saves to the database... INCLUDING the id 
+    #above saves an instance of Student to the database... INCLUDING the id 
   end 
   
   def self.create(name:, grade:) 
